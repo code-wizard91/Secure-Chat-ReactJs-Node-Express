@@ -4,20 +4,20 @@ version: "3.3"
 services:
 
 
-  nginx:
-    image: alimizan/todo-nginx:latest
-    ports:
-      - 80:80
-    container_name: nginx
+#  nginx:
+#    image: alimizan/react-chat-nginx:latest
+#    ports:
+#      - 80:80
+#    container_name: nginx
 
   frontend:
-    image: alimizan/react-chat-frontend:latest
+    image: alimizan/frontend-chat:latest
     ports:
       - 3000:3000
     container_name: frontend
 
   backend:
-    image: alimizan/react-chat-backend:latest
+    image: alimizan/backend-chat:latest
     ports:
       - 8080:8080
     container_name: backend
