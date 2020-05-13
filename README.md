@@ -1,4 +1,4 @@
-# Socket.io and React Js Chat Applicattion | With a NodeJs/Express Backend API
+# React Js Chat Applicattion | With a NodeJs/Express/Socket.io Backend API
 
 ### About:
 
