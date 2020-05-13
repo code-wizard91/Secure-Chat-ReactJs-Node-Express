@@ -5,7 +5,7 @@ services:
 
 
   frontend:
-#    image: alimizan/frontend-chat:latest  
+    image: alimizan/frontend-chat:latest  
     build: ./Frontend/app
     links:
       - backend
@@ -15,6 +15,7 @@ services:
 
   backend:
     image: alimizan/backend-chat:latest
+    build: ./Backend
     ports:
       - 8080:8080
     container_name: backend
