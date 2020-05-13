@@ -11,14 +11,21 @@ services:
 #    container_name: nginx
 
   frontend:
-    image: alimizan/frontend-chat:latest
-    ports:
-      - 3000:3000
-    container_name: frontend
+    build: ./Frontend
+    links:
+      - backend
+    expose:
+      - "3000"
+#    image: alimizan/frontend-chat:latest
+#    ports:
+#      - 3000:3000
+#    container_name: frontend
 
   backend:
     image: alimizan/backend-chat:latest
-    ports:
-      - 8080:8080
-    container_name: backend
+    expose:
+      - "8080"
+#    ports:
+#      - 8080:8080
+#    container_name: backend
 
