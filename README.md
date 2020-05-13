@@ -33,56 +33,34 @@ Before proceeding, please ensure you have the following software installed on yo
 
 * Download Git CLT - Windows: https://git-scm.com/download/windows Mac: https://git-scm.com/download/mac
 
-## Install Docker
-
-## Linux installation
+## Install Docker on Linux
 
 - curl https://get.docker.com | sudo bash
 
-## add yourself to the docker group
+### add yourself to the docker group
 
 - sudo usermod -aG docker $(whoami)
 
-## Getting started
+## Install Docker-Compose
 
-Please fork a copy of this repository. Forking a repository allows you to freely experiment with changes without affecting the original project. Alternatively download or clone the master branch.
+### Download Curl
+- sudo apt install -y curl jq
+
+### set which version to download (latest)
+- version=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | jq -r '.tag_name')
+
+### download to /usr/local/bin/docker-compose
+- sudo curl -L "https://github.com/docker/compose/releases/download/${version}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+### make the file executable
+- sudo chmod +x /usr/local/bin/docker-compose
+
+## Getting started
 
 ### Download & Install Dependencies on your machine 
 
-Clone the repo to your machine 
+- Clone the repo to your machine
+- Run " docker-compose up -d " from inside root directory of the project
 
-```
-git clone <CloneURL>
-```
-
-### Lunch the backend
-
-1)	Within terminal or cmd ensure you have navigated inside the 'Backend' directory and installed the dependencies
-
-```
-cd <../path/to/Backend> 
-yarn install OR npm install
-```
-
-2) Run the start script
-
-``` 
-yarn run start OR npm run start
-```
-
-### Lunch the frontend
-
-1) Open a new terminal window and navigate inside the 'Frontend' folder as you will need to keep the backend running in the background
-
-```
-cd <../path/to/Frontend> 
-yarn install OR npm install
-```
-
-2) Run the start script
-
-``` 
-yarn run start OR npm run start
-```
 
 Your app should be running on: http://localhost:3000
