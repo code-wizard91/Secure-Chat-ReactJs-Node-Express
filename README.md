@@ -35,11 +35,11 @@ Before proceeding, please ensure you have the following software installed on yo
 
 ## Install Docker
 
-# Linux installation
+## Linux installation
 
 - curl https://get.docker.com | sudo bash
 
-# add yourself to the docker group
+## add yourself to the docker group
 
 - sudo usermod -aG docker $(whoami)
 
