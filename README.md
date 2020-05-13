@@ -18,7 +18,7 @@ Users are able to join a chat room and message other users in real-time.
 ### Screenshot
 
 <p align="center">
-    <img src="http://git-assets.react-starter-kit.com/react_chat_app.png">  
+    <img src=/images/chat.jpg>  
 </p>
 
 ## How to run the app
