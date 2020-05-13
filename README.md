@@ -8,12 +8,12 @@ Users are able to join a chat room and message other users in real-time.
 
 ### Tech Stack:
 
-* NodeJS/Express
-* SOCKET.IO
-* React (Create React App)
+* React
 * React Router 4
 * Moment JS
 * SASS
+* NodeJS/Express
+* SOCKET.IO
 
 ### Screenshot
 
