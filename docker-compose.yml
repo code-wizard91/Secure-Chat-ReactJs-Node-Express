@@ -4,12 +4,6 @@ version: "3.3"
 services:
 
 
-#  nginx:
-#    image: alimizan/react-chat-nginx:latest
-#    ports:
-#      - 80:80
-#    container_name: nginx
-
   frontend:
 #    image: alimizan/frontend-chat:latest  
     build: ./Frontend/app
