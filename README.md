@@ -1,10 +1,10 @@
-# Real-Time Chat App Using Socket.io and React Js | With a NodeJs/Express/Socket.io Backend API
+# Socket.io and React Js Chat Applicattion | With a NodeJs/Express Backend API
 
 ### About:
 
-This is a real-time chat application built using React (Create React App on the frontend) and NodeJS/Express/Socket.io Backend.
+Chat app  built using React (React on the frontend) and NodeJS/Express/Socket.io Backend.
 
-Users are able to join groups and message other users in real-time.
+Users are able to join a chat room and message other users in real-time.
 
 ### Tech Stack:
 
@@ -21,20 +21,27 @@ Users are able to join groups and message other users in real-time.
     <img src="http://git-assets.react-starter-kit.com/react_chat_app.png">  
 </p>
 
-## Software 
+## How to run the app
 
 Before proceeding, please ensure you have the following software installed on your computer.
 
-* Node
-* Yarn (optional but recommended)
-* Git command line tools
+* Docker
+* Docker-compose
+* Git
 
 ### Useful links
 
 * Download Git CLT - Windows: https://git-scm.com/download/windows Mac: https://git-scm.com/download/mac
-* Download Node - https://nodejs.org/en/
-* Download Yarn CLT - https://yarnpkg.com/lang/en/docs/install/
-* Download VSCode - https://code.visualstudio.com/
+
+## Install Docker
+
+# Linux installation
+
+- curl https://get.docker.com | sudo bash
+
+# add yourself to the docker group
+
+- sudo usermod -aG docker $(whoami)
 
 ## Getting started
 
